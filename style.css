@@ -19,6 +19,43 @@ body {
   overflow: hidden;
   perspective: 1000px;
 }
+
+/* Love Message Styles */
+.love-message {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  text-align: center;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+.love-message h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem;
+  color: #4682b4; /* สีชมพูอ่อน */
+  text-shadow: 
+    0 0 10px #4682b4;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .love-message h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+}
 .night {
   position: fixed;
   left: 50%;
