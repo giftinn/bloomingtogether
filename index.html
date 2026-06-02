@@ -2,13 +2,13 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Flower For You</title>
+  <title>Flower for You!</title>
   <link rel="stylesheet" href="style.css">
-</head>
 
+</head>
 <body>
 
- <audio id="backsound" src="song.mp3" loop playsinline preload="auto"></audio
+  <audio id="backsound" src="song.mp3" loop playsinline preload="auto"></audio
   
 <div class="container">
   <div class="night"></div>
@@ -333,6 +333,12 @@
       </div>
     </div>
   </div>
+  
+  <!-- Love Message -->
+  <div class="love-message">
+    <h1>happy birthday, zuu</h1>
+  </div>
+  
   <script src="./script.js"></script>
   <div class="bubbles">
     <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
@@ -437,7 +443,7 @@
 </div>
   
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
       setTimeout(function() {
         const container = document.querySelector('.container');
         if (container) {
@@ -447,16 +453,15 @@
     });
 
     
-const audio = document.getElementById("backsound");
-
-function enableSound() {
-  audio.play().catch(() => {});
-}
-
-document.addEventListener("click", enableSound, { once: true });
-document.addEventListener("touchstart", enableSound, { once: true });
-</script>
+    const audio = document.getElementById("backsound");
+    
+    function enableSound() {
+      audio.play().catch(() => {});
+    }
+    
+    document.addEventListener("click", enableSound, { once: true });
+    document.addEventListener("touchstart", enableSound, { once: true });
+  </script>
 
 </body>
-
 </html>
